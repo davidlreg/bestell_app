@@ -1,0 +1,127 @@
+.mainContent {
+  background-color: #fcfcfc;
+  width: 75%;
+}
+
+.mainContentWrapper {
+  margin: 42px;
+}
+
+.restaurantPic {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+
+.restaurantName {
+  padding-bottom: 16px;
+}
+
+.rating,
+.ratings,
+.minDeliveryValue,
+.deliveryFee {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  color: #3c4c6b;
+}
+
+.ratingStar {
+  color: #f36805;
+}
+
+.redHearth {
+  color: red;
+}
+
+.ratings {
+  text-decoration: underline;
+}
+
+.restaurantInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.foodSections {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 18px;
+  width: 100%;
+}
+
+.foodSections > a {
+  padding: 8px;
+  border-radius: 16px;
+}
+
+.foodSections > a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #dddddd;
+}
+
+.popularItemsHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  padding: 32px 0px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+  height: 180px;
+  background-color: #ffffff;
+  border-radius: 18px;
+  border: 1px solid lightgray;
+  padding: 12px;
+}
+
+.itemName,
+.itemPrice {
+  font-weight: bold;
+}
+
+.itemDescription {
+  width: 100%;
+}
+
+.itemPicture {
+  width: 150px;
+  height: auto;
+  border-radius: 18px;
+}
+
+.addToCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  font-weight: bold;
+  color: #f36805;
+  border: 1px solid lightgray;
+  border-radius: 50px;
+}
+
+.addToCard:hover {
+  text-decoration: none;
+  background-color: #e0e0e0;
+  transition: 120ms ease-in-out;
+}

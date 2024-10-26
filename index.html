@@ -1,15 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BestellApp</title>
-    <link rel="icon" type="image/x-icon" href="/assets/logos/favicon/favicon.ico">
-    <link rel="stylesheet" href="style.css">
-    <script src="/scripts/script.js"></script>
-    <script src="/scripts/templates.js"></script>
-</head>
-<body>
-    
-</body>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/logos/favicon/favicon.ico"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/standard.css" />
+    <link rel="stylesheet" href="styles/mainContentStyling.css" />
+    <link rel="stylesheet" href="styles/shoppingCartStyling.css" />
+    <script src="scripts/script.js"></script>
+    <script src="scripts/templates.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="headerContent">
+        <a href="index.html">
+          <img class="logo" src="assets/logos/Logo.png" alt="BestellAppLogo" />
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <div class="mainContent">
+        <div>
+          <img
+            class="restaurantPic"
+            src="assets/img/platter-2009590_1280.jpg"
+            alt="Restaurant Picture"
+          />
+        </div>
+        <div class="mainContentWrapper">
+          <div>
+            <h1 class="restaurantName">Flavor & Flow</h1>
+            <div class="restaurantInfo">
+              <div class="rating">
+                <span class="material-symbols-outlined ratingStar"> star </span>
+                <a class="ratings"
+                  ><p><b>4.5</b> (200+)</p></a
+                >
+              </div>
+
+              <div class="minDeliveryValue">
+                <span class="material-symbols-outlined"> shopping_bag </span>
+                <p>Min. 10,00 €</p>
+              </div>
+
+              <div class="deliveryFee">
+                <span class="material-symbols-outlined"> pedal_bike </span>
+                <p>1,90 €</p>
+              </div>
+            </div>
+          </div>
+          <div class="foodSections">
+            <a href="#"><p>Beliebt</p></a>
+            <a href="#"><p>Vegetarisch</p></a>
+            <a href="#"><p>Vegan</p></a>
+            <a href="#"><p>Ramen</p></a>
+            <a href="#"><p>Getränke</p></a>
+            <a href="#"><p>Sweets</p></a>
+          </div>
+          <div class="popularItems">
+            <div class="popularItemsHeader">
+              <h3>Beliebt</h3>
+              <span class="material-symbols-outlined redHearth">
+                favorite
+              </span>
+            </div>
+            <div class="item">
+              <div>
+                <p class="itemName">ESSENS NAME</p>
+                <br />
+                <p class="itemDescription">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut
+                  provident voluptates vitae optio mollitia. Error nesciunt
+                  animi cupiditate consectetur nobis atque repudiandae tempore.
+                  Laborum earum aspernatur natus nobis temporibus cum.
+                </p>
+                <br />
+                <p class="itemPrice">ESSENS PREIS €</p>
+              </div>
+              <div>
+                <img
+                  class="itemPicture"
+                  src="assets/img/schnitzel-8575038_1280.png"
+                />
+              </div>
+              <div>
+                <a class="addToCard"
+                  ><span class="material-symbols-outlined"> add </span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="shoppingCart">
+        <h2>Warenkorb</h2>
+        <div class="deliveryOptions">
+          <div class="delivery">
+            <input type="radio" name="shippingType" value="delivery" checked />
+            <div class="deliveryInfos">
+              <label for="delivery">Lieferung</label>
+              <p>30-55 min</p>
+            </div>
+          </div>
+          <div class="pickup">
+            <input type="radio" name="shippingType" value="pickup" />
+            <div class="deliveryInfos">
+              <label for="pickup">Abholung</label>
+              <p>15 min</p>
+            </div>
+          </div>
+        </div>
+        <div class="cart">
+          <div class="emptyCard">
+            <img
+              class="shoppingCartLogo"
+              src="assets/logos/icons/shopping_basket_42dp_E8EAED_FILL0_wght400_GRAD0_opsz40.png"
+              alt="shoppingCartIcon"
+            />
+            <h2>Fülle deinen Warenkorb</h2>
+            <p>
+              Füge einige leckere Gerichte aus der Speisekarte hinzu und
+              bestelle dein Essen.
+            </p>
+          </div>
+          <div class="cartContent"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footerContent">
+        <div class="footerLinks">
+          <a href="#"><p>AGB</p></a>
+          <a href="#"><p>Datenschutzerklärung</p></a>
+          <a href="#"><p>Impressum</p></a>
+        </div>
+        <div class="copyright">
+          <p>© 2024 David Gerliz</p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
