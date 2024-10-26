@@ -1,0 +1,16 @@
+.addToCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    font-weight: bold;
+    color: #f36805;
+    border: 1px solid lightgray;
+    border-radius: 50px;
+  }
+  
+  .addToCard:hover {
+    text-decoration: none;
+    background-color: #e0e0e0;
+    transition: 120ms ease-in-out;
+  }

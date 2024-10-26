@@ -9,6 +9,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.d_none {
+  display: none;
+}
+
 a {
   color: black;
   text-decoration: none;
